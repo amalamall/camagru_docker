@@ -40,7 +40,7 @@ class User
         $header = "From: no-reply@camagru.fr";
         $content = 'Welcome to Camagru.
             To validate your account, please click on the link below or copy it.
-            http://localhost/camagru/authentification/activation?token=' . urlencode($token) . '
+            http://165.227.175.72/camagru/authentification/activation?token=' . urlencode($token) . '
             ---------------
             This mail was send automatically, please do not reply.';
         mail($to, $subject, $content, $header);
@@ -55,7 +55,7 @@ class User
         $header = "From: no-reply@camagru.fr";
         $content = 'Reset your password.
             if you reply for a new password, please click on the link below or copy it.
-            http://localhost/camagru/authentification/resetpassword?token=' . urlencode($token) . '
+            http://165.227.175.72/camagru/authentification/resetpassword?token=' . urlencode($token) . '
             ---------------
             This mail was send automatically, please do not reply.';
         mail($to, $subject, $content, $header);

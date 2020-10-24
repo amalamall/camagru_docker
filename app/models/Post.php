@@ -196,7 +196,7 @@ class Post
         $subject =  $user_info->username . " liked your post";
         $header = "From: no-reply@camagru.fr";
         $content = 'click here to view lasted comment and like to your post.
-            http://localhost/camagru/posts/viewpost?id_post=' . $id_post . '
+            http://165.227.175.72/camagru/posts/viewpost?id_post=' . $id_post . '
             ---------------
             This mail was send automatically, please do not reply.';
         mail($to, $subject, $content, $header);
