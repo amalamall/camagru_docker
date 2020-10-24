@@ -7,7 +7,7 @@
     // Load model
     public function model($model){
       // Require model file
-      require_once SERVER_PATH.'/camagru/app/models/' . $model . '.php';
+      require_once '/web/www/'.'/camagru/app/models/' . $model . '.php';
 
       // Instatiate model
       return new $model();
@@ -16,11 +16,11 @@
     // Load view
     public function view($view, $data = []){
       // Check for view file
-      if(file_exists(SERVER_PATH.'/camagru/app/views/' . strtolower($view) . '.php')){
-        require_once SERVER_PATH.'/camagru/app/views/' . strtolower($view) . '.php';
+      if(file_exists('/web/www/'.'/camagru/app/views/' . strtolower($view) . '.php')){
+        require_once '/web/www/'.'/camagru/app/views/' . strtolower($view) . '.php';
       } else {
         // View does not exist
-        require_once(SERVER_PATH.'/camagru/app/views/users/error.php');
+        require_once('/web/www/'.'/camagru/app/views/users/error.php');
       }
     }
   }
