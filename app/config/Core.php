@@ -16,7 +16,7 @@
 
       // Look in controllers for first value
       if(isset($url[0])){
-                  if(file_exists('/web/www/'.'/camagru/app/controllers/' . ucwords($url[0]). '.php')){
+                  if(file_exists('/web/www'.'/camagru/app/controllers/' . ucwords($url[0]). '.php')){
             // If exists, set as controller
             $this->currentController = ucwords($url[0]);
             // Unset 0 Index
@@ -26,7 +26,7 @@
 
 
       // Require the controller
-      require_once '/web/www/'.'/camagru/app/controllers/'. $this->currentController . '.php';
+      require_once '/web/www'.'/camagru/app/controllers/'. $this->currentController . '.php';
 
       // Instantiate controller class
       $this->currentController = new $this->currentController;
