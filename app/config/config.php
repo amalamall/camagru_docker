@@ -4,6 +4,8 @@
   define('DB_USER', 'mrtam');
   define('DB_PASS', '');
   define('DB_NAME', 'camagru');
+  define('SERVER_PATH', '/web/www');
+
 
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));
