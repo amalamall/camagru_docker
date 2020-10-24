@@ -1,6 +1,6 @@
 <?php
   // DB Params
-  define('DB_HOST', 'http://165.227.175.72/');
+  define('DB_HOST', 'localhost');
   define('DB_USER', 'root');
   define('DB_PASS', 'tiger');
   define('DB_NAME', 'camagru');
