@@ -1,10 +1,9 @@
 <?php
   // DB Params
-  define('DB_HOST', 'localhost');
+  define('DB_HOST', '127.0.0.1');
   define('DB_USER', 'mrtam');
   define('DB_PASS', '');
   define('DB_NAME', 'camagru');
-  define('SERVER_PATH', '/web/www');
 
 
   // App Root
